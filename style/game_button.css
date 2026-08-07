@@ -1,0 +1,19 @@
+#game-button-start {
+    width: 100%;
+    max-width: 128px;
+    height: 100%;
+    user-select: none;
+
+    border-radius: 8px;
+    background-color: hsl(120, var(--box-color-sat), 40%);
+    transition: 0.25s background-color cubic-bezier(0.33, 1, 0.68, 1);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#game-button-start:hover {
+    cursor: pointer;
+    background-color: hsl(120, var(--box-color-sat), 25%);
+}

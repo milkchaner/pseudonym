@@ -1,0 +1,57 @@
+#leaderboard-game {
+    display: none;
+    flex: 1;
+    flex-direction: column;
+
+    border-radius: 16px;
+    background-color: #111;
+    padding: 12px;
+}
+
+#leaderboard-game-content {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#leaderboard-game-teams > p,
+#leaderboard-game-score > p {
+    padding: 4px;
+}
+#leaderboard-game-teams p:nth-child(odd),
+#leaderboard-game-score p:nth-child(odd) {
+    background-color: hsl(0 10% 15%);
+}
+
+#leaderboard-game-winner {
+    flex: 1;
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#leaderboard-game-winner-text {
+    padding: 24px;
+    background-color: brown;
+    border-radius: 8px;
+}
+
+#leaderboard-game-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+#leaderboard-game-continue-button {
+	flex: 0.3;
+
+    user-select: none;
+    cursor: pointer;
+
+	border-radius: 12px;
+    background-color: hsl(215 60% 70%);
+	padding: 12px;
+
+	display: flex;
+	justify-content: center;
+}

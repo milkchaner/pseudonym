@@ -1,0 +1,65 @@
+.game-category-block {
+    cursor: pointer;
+    position: relative;
+    color: white;
+
+    margin: 0px;
+    padding: 0px;
+    border-radius: 6px;
+
+    background-color: transparent;
+    width: 100%;
+    max-width: 500px;
+    height: 256px;
+}
+
+.game-category-block-select {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+
+    width:  32px;
+    height: 32px;
+
+    border-radius: 100%;
+    background-color: var(--box-color);
+    transition: 0.25s background-color cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.game-category-block-title {
+    user-select: none;
+
+    /* position text over the bg image */
+    position: absolute;
+
+    /* align text to the top-center */
+    text-align: center;
+    left: 50%;
+    top: 24px;
+    transform: translate(-50%, -50%);
+
+    /* smooth increasing offset */
+    transition: 0.25s top cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.game-category-block > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+
+    object-fit: cover;
+    filter: brightness(0.5);
+
+    /* smooth brightening up on hover */
+    transition: 0.25s filter cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.game-category-block:hover .game-category-block-title {
+    top: 32px;
+}
+.game-category-block:hover .game-category-block-select {
+    background-color: var(--hover-box-color);
+}
+.game-category-block:hover > img {
+    filter: brightness(0.65);
+}

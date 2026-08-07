@@ -1,0 +1,82 @@
+#settings-menu {
+    display: none;
+    flex-direction: column;
+    flex: 1;
+}
+
+.settings-option {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+
+    padding: 8px;
+    background-color: #111111;
+    border-radius: 8px;
+}
+
+.settings-option-custom-words {
+    flex-direction: column;
+}
+
+textarea.settings-value-text {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: none;
+    resize: vertical;
+}
+
+.settings-value-text {
+    height: fit-content;
+    max-width: 320px;
+    flex: 1;
+    padding: 6px 10px;
+    border-radius: 8px;
+    color: var(--text-muted);
+    border: 1px solid transparent;
+    outline: none;
+    background-color: var(--bg-input);
+    box-shadow: inset 0 2px 4px var(--shadow-inset);
+    transition: 200ms ease-in-out;
+}
+.settings-value-text:hover,
+.settings-value-text:focus {
+    background-color: var(--bg-input-focus);
+    color: var(--text-primary);
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--shadow-focus);
+}
+
+.settings-value-dropbox {
+    height: fit-content;
+    max-width: 320px;
+    flex: 1;
+    padding: 6px 28px 6px 10px;
+    border-radius: 8px;
+    color: var(--text-muted);
+    border: 1px solid transparent;
+    outline: none;
+    background-color: var(--bg-input);
+    box-shadow: inset 0 2px 4px var(--shadow-inset);
+    transition: 200ms ease-in-out;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+.settings-value-dropbox:hover {
+    background-color: var(--bg-input-focus);
+    color: var(--text-primary);
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--shadow-focus);
+}
+.settings-value-dropbox option {
+    background-color: var(--bg-input-focus);
+    color: var(--text-primary);
+}
+
+/* header in the main menu */
+#header-button-settings {
+    user-select: none;
+    cursor: pointer;
+}

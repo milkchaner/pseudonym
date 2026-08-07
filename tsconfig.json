@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "target": "ES2023",
+        "module": "preserve",
+        "strict": true,
+        "noUncheckedIndexedAccess": true,
+        "removeComments": true,
+        "rewriteRelativeImportExtensions": true,
+        "outDir": "dist",
+        "rootDir": "."
+    },
+    "include": ["./src/**/*"]
+}

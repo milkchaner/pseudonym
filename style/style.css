@@ -1,0 +1,123 @@
+@import 'game_category.css';
+@import 'game_button.css';
+
+@import 'alias_leaderboard.css';
+@import 'alias_game.css';
+
+@import 'settings.css';
+
+:root {
+    /* Backgrounds — layered dark, darkest to lightest */
+    --bg-void: #000000;      /* body */
+    --bg-panel: #060606;     /* header/footer */
+    --bg-surface: #040404;   /* main content area */
+    --bg-input: #1a1a1a;     /* form elements at rest */
+    --bg-input-focus: #262626;
+
+    /* Text */
+    --text-primary: #ffffff;
+    --text-secondary: #9a9a9a;
+    --text-muted: #5c5c5c;
+
+    /* Accent — pick ONE hue and let it do all the work */
+    --accent: #4d8dff;
+    --accent-dim: #2a5cb8;
+
+    /* Feedback states */
+    --shadow-inset: rgba(0, 0, 0, 0.5);
+    --shadow-focus: rgba(77, 141, 255, 0.35);
+}
+/* GLOBAL */
+* {
+    font-size: 18pt;
+    padding: 0;
+}
+
+p {
+    margin: 2px;
+}
+
+button {
+    appearance: none;
+    -webkit-appearance: none;
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: inherit;
+    background: none;
+    font: inherit;
+}
+
+/* BODY AND HEADER */
+html, body {
+    margin: 0px;
+    overflow: hidden;
+    height: calc(100% - 8px); /* padding*2 */
+    padding: 4px;
+}
+body {
+    background-color: var(--bg-void);
+    color: var(--text-primary);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+/* END GLOBAL */
+/* HEADER */
+#header {
+    position: relative;
+    background-color: var(--bg-panel);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+}
+#header-text-title {
+    margin: 2px;
+    margin-right: auto;
+}
+#header-button-settings {
+    margin: 2px;
+}
+#header-round-timer {
+    position: absolute;
+    display: none;
+    left: 50%;
+    transform: translateX(-50%);
+    font-variant-numeric: tabular-nums;
+}
+#header-button-pause {
+    display: none;
+    margin: 2px;
+    margin-left: 16px;
+    user-select: none;
+    cursor: pointer;
+}
+/* END HEADER */
+/* BODY */
+#mainbody {
+    padding: 10px;
+    display: flex;
+    flex: 1;
+    min-height: 0;
+    background-color: var(--bg-surface);
+}
+#selection-menu {
+    display: flex;
+    flex: 1;
+    min-height: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: space-evenly;
+    overflow-y: scroll;
+}
+/* END BODY */
+/* FOOTER */
+#footer {
+    background-color: var(--bg-panel);
+    min-height: 48px;
+    padding: 8px;
+}
+/* END FOOTER */
