@@ -9,7 +9,7 @@ for building and local deployment you'll need:
 
 here is the commands:
 ```
-git clone https://codeberg.org/astralwink/pages pseudonym
+git clone https://github.com/milkchaner/pseudonym
 cd pseudonym
 ln -s ../index.html dist/index.html
 ln -s ../style dist/style
